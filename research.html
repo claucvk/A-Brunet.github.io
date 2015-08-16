@@ -37,7 +37,7 @@
 								<a href="./contact.html">Contact</a>
 							</li>
 						</ul>
-						<br class="clear"/>
+						<br class="clear" />
 					</div>
 				</div>
 				<div id="banner">
@@ -52,13 +52,13 @@
 							Laboratoire physique théorique (IRSAMC-LPT, UMR 5152), Institut pharmacologie et de Biologie Structurale (IPBS, UMR, 5089)
 						</p>
 						<ul class="linkedList">
+								<li>
 								<a href="./">Home</a>
 							</li>
 							<li>
 								<a href="./biography.html">Biography</a>
 							</li>
-							<li>
-								<li class="first">
+								<li class="first active">
 								<a href="./research.html">Research</a>
 							</li>
 							<li>
@@ -72,7 +72,6 @@
 							</li>
 						</ul>
 					</div>
-				</div>
 					
 					<div id="content">
 						<div id="box1">
@@ -83,67 +82,67 @@
 								Understanding the impact of environmental effects on the mechanical and physical properties of DNA stay a decisive challenging to well understanding the live of cells. As everybody knows, DNA is an essential component of the cellular machinery. It adopted a lot of conformation from packaging chromosome to the commonly-know double helix and it play a crucial role in lot biological processes such as transcription or replication.
 							</p>
 							<p>
-							Indeed, it was experimentally found that DNA is a polymer which can stiffen, abruptly bend or be partially denatured in function of its sequence. This local events radically alterne the physicals properties of the DNA molecular in terme of flexibility and elasticity.	
+								Indeed, it was experimentally found that DNA is a polymer which can stiffen, abruptly bend or be partially denatured in function of its sequence. This local events radically alterne the physicals properties of the DNA molecular in terme of flexibility and elasticity.
 							</p>
 							<p>
-							So, is crucial to understanding the physics of this molecule. In this framework, we develop tools to quantify, both experimentally and theoretically the impact of physical and chemical changes on the mechanics of a DNA molecule.	
+								So, is crucial to understanding the physics of this molecule. In this framework, we develop tools to quantify, both experimentally and theoretically the impact of physical and chemical changes on the mechanics of a DNA molecule.
 							</p>
 						</div>
 						<div id="box2">
-							<h3>
-								Experimental and numerical simulation
-							</h3>
-							<p>
-								My project constists in both using the Thethered Particle Motion (or TPM) methode and modeling the DNA behaviour by numerical simulations.
+							<h3>Experimental and numerical simulation</h3>
+							<p> My project constists in both using the Thethered Particle Motion (or TPM) methode and modeling the DNA behaviour by numerical simulations. 
 							</p>
 							<p>
 								<strong>Experiment approach:</strong> TPM is a recent experimental single molecule technique which consists in grafting one end of the DNA molecular(length L_{DNA}) on a substrat and a nanometric particule (with raduis R_{par}) at the other end. The brownianne motion of the tethered nanoparticle is followed. The amplitude of the motion R_{Exp||} of this complex DNA/particle that directly depends on the apparent length of the DNA molecule, so of its conformational changes of DNA molecules.
 							</p>
 							<p>
-								The TPM technique is well adapted to address questions concerning conformational changes of the DNA molecule such as curvatures, or denaturation buble. Since conformational degrees of freedom are not hampered by any external constraints with TPM methode. Moreover, the IPBS group, which has a recognized expertise in TPM techniques, has developed a biochip that enables the high parallelization of TPM and the analysis enought molecules simultaneously[1]. Thanks to the ensuing high-throughput data acquisition, we obtain a large accumulation of individual statistics that permits us to get results with a good accuracy. 
-In that way, the 2D projection of the bead displacement relative to the anchoring point of the DNA molecule gives access to its root-mean-squared end-to-end distance projected on the grafting surface, noted Rexp||raw.
+							The TPM technique is well adapted to address questions concerning conformational changes of the DNA molecule such as curvatures, or denaturation buble. Since conformational degrees of freedom are not hampered by any external constraints with TPM methode. Moreover, the IPBS group, which has a recognized expertise in TPM techniques, has developed a biochip that enables the high parallelization of TPM and the analysis enought molecules simultaneously[1]. Thanks to the ensuing high-throughput data acquisition, we obtain a large accumulation of individual statistics that permits us to get results with a good accuracy. 
+							In that way, the 2D projection of the bead displacement relative to the anchoring point of the DNA molecule gives access to its root-mean-squared end-to-end distance projected on the grafting surface, noted Rexp||raw.	
 							</p>
-							<p>[1] T. Plénat*, C. Tardin*, P. Rousseau and L. Salomé, High-throughput single-molecule analysis of DNA-protein interactions by Tethered Particle Motion, Nucl. Acid Res. DOI: 10.1093/nar/gks250 (2012).
+							<p>
+							[1] T. Plénat*, C. Tardin*, P. Rousseau and L. Salomé, High-throughput single-molecule analysis of DNA-protein interactions by Tethered Particle Motion, Nucl. Acid Res. DOI: 10.1093/nar/gks250 (2012).
 							</p>
 							<p>
 								<strong>Numerical simulation approach:</strong> I performed Kinetic Monte Carlo simulations on the particle-DNA complex to predict the particle to anchor 2D-distance. The current simulation model is based on statistical model of polymer described at the mesoscopic scale[2].
 							</p>
 							<p>
-									To simulate the TPM geometry I model the DNA-particle complex as a chain of N(:25 or 50) connected small spheres of radius a and a larger final particle of radius R (R_{par}). Numerical displacement of the labeled particle is obtained by performing a Kinetic Monte Carlo Simulation with the followings constraints : hard-wall condition, freely rotative joint and hard sphere.
-The 2D-vector of the particle position  is measured throughout simulations and utilized to estimate the amplitude of motion and average being taken along the trajectory. We obtain R_{Simu||} which would be compare at the TPM experiment measurement.
+								To simulate the TPM geometry I model the DNA-particle complex as a chain of N(:25 or 50) connected small spheres of radius a and a larger final particle of radius R (R_{par}). Numerical displacement of the labeled particle is obtained by performing a Kinetic Monte Carlo Simulation with the followings constraints : hard-wall condition, freely rotative joint and hard sphere.
+							</p>
+							<p>
+								The 2D-vector of the particle position  is measured throughout simulations and utilized to estimate the amplitude of motion and average being taken along the trajectory. We obtain R_{Simu||} which would be compare at the TPM experiment measurement.
 							</p>
 							<p>
 							[2]Je suis pas sûre quel de deux references (dans texte que tu m'a donné) tu veux metrre ici.
 							</p>
-							<p>
 								<strong>Théortical aspect:</strong> Obtaining most degree of pertinant physical parameter of the DNA requires few step of analysis procedure. The calculation of the root-mean-square end-to-end distance of the DNA molecule R_{DNA} from the R_{Exp||} or R_{Simu||} requires an appropriate theoretical model and correcting for the effects of the particle.
 							</p>
 							<p>
 								With the classical Worm-Like chain model [5] , the amplitude of motion of the DNA-particle complex, take into account the persistence length of the DNA, is derived from the 〈R 2 DNA 〉 calculated for an isolated DNA molecule:
-								<center>〈R² DNA 〉=2L p( L−L p ( 1−e− L/ L p) ) </center>
-
-In this second step we considering that the particle and the DNA molecule are statistically independent and in ignoring the effect of the substrate. We can simply infer R_{DNA} with
-								<center> R_{DNA}	= (\frac{3}{2} R²_{||} - R²_{par} ]^{1/2} </center>
+								<center>〈R² DNA 〉=2L p( L−L p ( 1−e− L/ L p) )</center>
 							</p>
 							<p>
-							Ici tu as noté une réference, mais je suis pas sûre qui soit la bonne place ou qu'il soit bien numerote. 2]. M. Manghi, C. Tardin, J. Baglio, P. Rousseau, L. Salomé, N. Destainville, Probing DNA conformational changes with high temporal resolution by tethered particle motion, Phys. Biol. 7, 046003 (2010).	
-							</p>
-							</div>
-							<div id="box3">
-								<h3>
-									Results
-								</h3>
-							<p> <strong>Local defect: Intrisic bent:</strong> 	 
-							</p>
-							<p> <strong>Local defect: formation of denaturation bubble:</strong> 
-								TPM thus gives access to the all important entropic contribution to denaturation [2].	 
+								In this second step we considering that the particle and the DNA molecule are statistically independent and in ignoring the effect of the substrate. We can simply infer R_{DNA} with: <center> R_{DNA} = (\frac{3}{2} R²_{||} - R²_{par} ]^{1/2}</center>
 							</p>
 							<p>
-								Ici tu as noté une réference, mais je suis pas sûre qu'il soit bien numerote. [2]. 	J. Palmeri, M. Manghi, N. Destainville, Thermal Denaturation of Fluctuating DNA Driven by bending Entropy, Phys. Rev. Lett. 99, 088103 (2007).
+							Ici je ne suis pas sûre qu'il soit la bonne place pour cette réference [2]. M. Manghi, C. Tardin, J. Baglio, P. Rousseau, L. Salomé, N. Destainville, Probing DNA conformational changes with high temporal resolution by tethered particle motion, Phys. Biol. 7, 046003 (2010).	
 							</p>
-							<p> <strong>Global effect: Variation of Ionic strenght:</strong> 	 
+								
+						</div>
+						<div id="box3">
+							<h3>Results</h3>
+							<p>
+								<strong>Local defect: Intrisic bent:</strong> XXXX
 							</p>
-							</div>
-								</div>
+					<p>
+						<strong>Local defect: formation of dénaturation bubble:</strong> TPM thus gives access to the all important entropic contribution to denaturation [2].
+					</p>
+					<p>
+					Ici je ne suis pas sûre qu'il soit bien numeroté cette réference[2].J. Palmeri, M. Manghi, N. Destainville, Thermal Denaturation of Fluctuating DNA Driven by bending Entropy, Phys. Rev. Lett. 99, 088103 (2007).
+					<p>
+						<strong>Global effect: Variation of Ionic strenght:</strong> XXXX
+					</p>
+						</div>
+						
+					</div>
 					    </body>
 					</html>
