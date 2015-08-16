@@ -28,7 +28,7 @@ body {
 	font-size: 12pt;
 	line-height: 1.75em;
 	font-family: Arial, sans-serif;
-	background: #030707 url('images/bg.jpg');
+	background: #222222;
 	color: #c0c1c1;
 }
 
@@ -78,7 +78,7 @@ ul {
 	height: 200px;
 	width: 1120px;
 	margin: 0px 0 0 0;
-	background: #DE1B1B;
+	background: #F6F6F6;
 }
 
 #box1 {
@@ -113,12 +113,12 @@ ul {
 	position: relative;
 	padding: 30px;
 	width: 1120px;
-	background: #3ca9cd;
-	color: #addbea;
+	background: #9b1212;
+	color: #000;
 }
 
 #footer a {
-	color: #e2f2f8;
+	color: #000;
 }
 
 #footer h2, #footer h3, #footer h4 {
@@ -234,7 +234,7 @@ ul {
 }
 
 #nav ul li.active {
-	background: #DE1B1B;
+	background: #b11515;
 }
 
 #nav li a {
