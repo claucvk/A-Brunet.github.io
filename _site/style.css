@@ -114,15 +114,15 @@ ul {
 	padding: 30px;
 	width: 1120px;
 	background: #9b1212;
-	color: #000;
+	color: #F6F6F6;
 }
 
 #footer a {
-	color: #000;
+	color: #dddddd;
 }
 
 #footer h2, #footer h3, #footer h4 {
-	color: #ffffff;
+	color: #2b2b2b;
 }
 
 #footer ul {
