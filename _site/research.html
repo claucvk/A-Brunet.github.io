@@ -95,12 +95,16 @@
 							<p>
 								<strong>Experiment approach:</strong> TPM is a recent experimental single molecule technique which consists in grafting one end of the DNA molecular(length L_{DNA}) on a substrat and a nanometric particule (with raduis R_{par}) at the other end. The brownianne motion of the tethered nanoparticle is followed. The amplitude of the motion R_{Exp||} of this complex DNA/particle that directly depends on the apparent length of the DNA molecule, so of its conformational changes of DNA molecules.
 							</p>
+							<img class="center" src="images/TPM-on-a-chip.png" width="850" height="160" alt="" />
+							
 							<p>
 							The TPM technique is well adapted to address questions concerning conformational changes of the DNA molecule such as curvatures, or denaturation buble. Since conformational degrees of freedom are not hampered by any external constraints with TPM methode. Moreover, the IPBS group, which has a recognized expertise in TPM techniques, has developed a biochip that enables the high parallelization of TPM and the analysis enought molecules simultaneously[1]. Thanks to the ensuing high-throughput data acquisition, we obtain a large accumulation of individual statistics that permits us to get results with a good accuracy. 
 							In that way, the 2D projection of the bead displacement relative to the anchoring point of the DNA molecule gives access to its root-mean-squared end-to-end distance projected on the grafting surface, noted Rexp||raw.	
 							</p>
+							<img class="center" src="images/TPM.png" width="850" height="250" alt="" />
 							<p>
-							[1] T. Plénat*, C. Tardin*, P. Rousseau and L. Salomé, High-throughput single-molecule analysis of DNA-protein interactions by Tethered Particle Motion, Nucl. Acid Res. DOI: 10.1093/nar/gks250 (2012).
+								
+							[1] Plénat, T., Tardin, C., Rousseau, P., Salomé, L., 2012. High-throughput single-molecule analysis of DNA-protein interactions by tethered particle motion. Nucleic Acids Research. 40 (12) : e89.
 							</p>
 							<p>
 								<strong>Numerical simulation approach:</strong> I performed Kinetic Monte Carlo simulations on the particle-DNA complex to predict the particle to anchor 2D-distance. The current simulation model is based on statistical model of polymer described at the mesoscopic scale[2].
@@ -120,26 +124,43 @@
 								With the classical Worm-Like chain model [5] , the amplitude of motion of the DNA-particle complex, take into account the persistence length of the DNA, is derived from the 〈R 2 DNA 〉 calculated for an isolated DNA molecule:
 								<center>〈R² DNA 〉=2L p( L−L p ( 1−e− L/ L p) )</center>
 							</p>
+							<img class="center" src="images/SImu_sphereentiere_2.png" width="850" height="200" alt="" />
 							<p>
 								In this second step we considering that the particle and the DNA molecule are statistically independent and in ignoring the effect of the substrate. We can simply infer R_{DNA} with: <center> R_{DNA} = (\frac{3}{2} R²_{||} - R²_{par} ]^{1/2}</center>
 							</p>
 							<p>
-							Ici je ne suis pas sûre qu'il soit la bonne place pour cette réference [2]. M. Manghi, C. Tardin, J. Baglio, P. Rousseau, L. Salomé, N. Destainville, Probing DNA conformational changes with high temporal resolution by tethered particle motion, Phys. Biol. 7, 046003 (2010).	
+							[2] M. Manghi, C. Tardin, J. Baglio, P. Rousseau, L. Salomé, N. Destainville, 2010. Probing DNA
+							conformational changes with high temporal resolution by tethered particle motion, Phys. Biol. 7, 046003.	
 							</p>
 								
 						</div>
 						<div id="box3">
 							<h3>Results</h3>
 							<p>
-								<strong>Local defect: Intrisic bent:</strong> XXXX
-							</p>
-					<p>
-						<strong>Local defect: formation of dénaturation bubble:</strong> TPM thus gives access to the all important entropic contribution to denaturation [2].
+								<strong> Global effect: Variation of Ionic strenght:</strong> A first study was conducted on the effect of the ionic strength induced by surrounding ions in solution on the DNA persistence length (L p ) which characterizes the DNA polymer rigidity. The extracted L p values of HT-TPM measurement decrease from 55 to 30 nm when the ionic strength increases. A stronger decrease was observed in presence of divalent ions Mg 2 + than with monovalent ions Na + .
 					</p>
 					<p>
-					Ici je ne suis pas sûre qu'il soit bien numeroté cette réference[2].J. Palmeri, M. Manghi, N. Destainville, Thermal Denaturation of Fluctuating DNA Driven by bending Entropy, Phys. Rev. Lett. 99, 088103 (2007).
+This quantification of L p dependence, on a large and strongly prospected range
+of ionic strengthes, tends to validate the theoretical approach proposed in 2006 by
+Manning in presence of monovalent ions Na + .
+<img class="middle" src="images/logosel.png" width="460" height="500" alt="" />
+					</p>
 					<p>
-						<strong>Global effect: Variation of Ionic strenght:</strong> XXXX
+						<p>
+[3]  Brunet, A., Tardin, C., Salomé, L., Rousseau, P., Destainville, N., Manghi, M., Dependence of DNA persistence length on ionic strength of solutions with monovalent and divalent salts : a joint theory-experiment study, Macromolecules, 2015, 48 (11), pp 3641–3652, DOI : 10.1021/acs.macromol.5b00735.	
+						</p>
+						<strong>Local defect: Intrisic bent:</strong> A second project allows us to develop a method of evaluation and quantification of local DNA bending angles, induced either by specific intrinsic sequence, or by the binding of proteins on DNA. Constructs made of 575 base-pair DNAs with in-phase assemblies of one to seven sequences CAAAAAACGG was used.
+A theoretical description of the polymer chain, named "kinked Worm-Like Chain" was proposed which leads to a simple formulation of the end-to-end distance of DNA molecules allowing to extract local bend angles from HT-TPM measurement. As a result, we find that the sequence CAAAAAACGG induces a bend angle of 19 ◦ ± 4 ◦ , in agreement with other value from the literature.
+					</p>
+					<p>
+					[4] Brunet, A., Chevalier, S., Destainville, N., Manghi, M., Rousseau, P., Salhi,
+					M., Salomé, L., Tardin, C., Probing a label-free local bend in DNA by single
+					molecule tethered particle motion, Nucleic acids research, 2015, 42 (11), pe 72(7)
+					DOI : 10.1093/nar/gkv201
+				   </p>
+				    <p>
+						<strong>Local defect: formation of dénaturation bubble:</strong> A third study concerning the influence of temperature-induced partial denaturation on the global apparent rigidity parameters of the polymer was conducted.
+Preliminary results are proposed.
 					</p>
 						</div>
 						
