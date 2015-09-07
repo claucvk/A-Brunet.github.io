@@ -93,48 +93,49 @@
 							<p> My project constists in both using the Thethered Particle Motion (or TPM) methode and modeling the DNA behaviour by numerical simulations. 
 							</p>
 							<p>
-								<strong>Experiment approach:</strong> TPM is a recent experimental single molecule technique which consists in grafting one end of the DNA molecular(length L_{DNA}) on a substrat and a nanometric particule (with raduis R_{par}) at the other end. The brownianne motion of the tethered nanoparticle is followed. The amplitude of the motion R_{Exp||} of this complex DNA/particle that directly depends on the apparent length of the DNA molecule, so of its conformational changes of DNA molecules.
+								<strong>Experiment approach:</strong> TPM is a recent experimental single molecule technique which consists in grafting one end of the DNA molecular (length L<sub>DNA</sub>) on a substrat and a nanometric particule (with raduis R<sub>par</sub>) at the other end. The brownianne motion of the tethered nanoparticle is followed. The amplitude of the motion R<sub>Exp||</sub> of this complex DNA/particle that directly depends on the apparent length of the DNA molecule, so of its conformational changes of DNA molecules.
 								
 								<div style="text-align: center;"><IMG SRC="./images/TPM-on-a-chip.png" width="850" height="250" ALT="image"></div>
-								
+									<center>
+										Schematic representation of a TPM Bio-chip experiment
+									</center>
+								<br>
 							</p>
 							<p>
-							The TPM technique is well adapted to address questions concerning conformational changes of the DNA molecule such as curvatures, or denaturation buble. Since conformational degrees of freedom are not hampered by any external constraints with TPM methode. Moreover, the IPBS group, which has a recognized expertise in TPM techniques, has developed a biochip that enables the high parallelization of TPM and the analysis enought molecules simultaneously[1]. Thanks to the ensuing high-throughput data acquisition, we obtain a large accumulation of individual statistics that permits us to get results with a good accuracy. 
-							In that way, the 2D projection of the bead displacement relative to the anchoring point of the DNA molecule gives access to its root-mean-squared end-to-end distance projected on the grafting surface, noted Rexp||raw.
+							The TPM technique is well adapted to address questions concerning conformational changes of the DNA molecule such as curvatures, or denaturation bubble. Since conformational degrees of freedom are not hampered by any external constraints with TPM methode. Moreover, the IPBS group, which has a recognized expertise in TPM techniques, has developed a biochip that enables the high parallelization of TPM and the analysis enought molecules simultaneously <sup>[1]</sup>. Thanks to the ensuing high-throughput data acquisition, we obtain a large accumulation of individual statistics that permits us to get results with a good accuracy. 
+							In that way, the 2D projection of the bead displacement relative to the anchoring point of the DNA molecule gives access to its root-mean-squared end-to-end distance projected on the grafting surface, noted R<sub>exp||</sub>.
 							
 							<div style="text-align: center;"><IMG SRC="./images/TPM.png" width="850" height="270" ALT="image"></div>
-					
+								<center>
+									1) 2D projection of the nanoparticle displacement
+									2) Root-mean-squared end-to-end distance projected R <sub>exp||</sub>, usually called 									Amplitude of the motion
+									3) Probability distribution of R<sub>exp||</sub>
+								</center>
+								<br>
 							</p>
-							
 							<p>
-								
 							[1] Plénat, T., Tardin, C., Rousseau, P., Salomé, L., 2012. High-throughput single-molecule analysis of DNA-protein interactions by tethered particle motion. Nucleic Acids Research. 40 (12) : e89.
 							</p>
 							<p>
-								<strong>Numerical simulation approach:</strong> I performed Kinetic Monte Carlo simulations on the particle-DNA complex to predict the particle to anchor 2D-distance. The current simulation model is based on statistical model of polymer described at the mesoscopic scale[2].
+								<strong>Numerical simulation approach:</strong> I performed Kinetic Monte Carlo simulations on the particle-DNA complex to predict the particle to anchor 2D-distance. The current simulation model is based on statistical model of polymer described at the mesoscopic scale <sup>[2]</sup>.
 							</p>
 							<p>
-								To simulate the TPM geometry I model the DNA-particle complex as a chain of N(:25 or 50) connected small spheres of radius a and a larger final particle of radius R (R_{par}). Numerical displacement of the labeled particle is obtained by performing a Kinetic Monte Carlo Simulation with the followings constraints : hard-wall condition, freely rotative joint and hard sphere.
+								To simulate the TPM geometry I model the DNA-particle complex as a chain of N(:25 or 50) connected small spheres of radius a and a larger final particle of radius R (R<sub>par</sub>). Numerical displacement of the labeled particle is obtained by performing a Kinetic Monte Carlo Simulation with the followings constraints: hard-wall condition, freely rotative joint and hard sphere.
 							</p>
 							<p>
-								The 2D-vector of the particle position  is measured throughout simulations and utilized to estimate the amplitude of motion and average being taken along the trajectory. We obtain R_{Simu||} which would be compare at the TPM experiment measurement.
+								The 2D-vector of the particle position  is measured throughout simulations and utilized to estimate the amplitude of motion and average being taken along the trajectory. We obtain R<sub>Simu||</sub> which would be compare at the TPM experiment measurement.
+							</p>
+								<strong>Theoretical aspect:</strong> Obtaining most degree of pertinant physical parameter of the DNA requires few step of analysis procedure. The calculation of the root-mean-square end-to-end distance of the DNA molecule R<sub>DNA</sub> from the R<sub>Exp||</sub> or R<sub>Simu||</sub> requires an appropriate theoretical model and correcting for the effects of the particle.
 							</p>
 							<p>
-							[2]Je suis pas sûre quel de deux references (dans texte que tu m'a donné) tu veux metrre ici.
-							</p>
-								<strong>Théortical aspect:</strong> Obtaining most degree of pertinant physical parameter of the DNA requires few step of analysis procedure. The calculation of the root-mean-square end-to-end distance of the DNA molecule R_{DNA} from the R_{Exp||} or R_{Simu||} requires an appropriate theoretical model and correcting for the effects of the particle.
-							</p>
-							<p>
-								With the classical Worm-Like chain model [5] , the amplitude of motion of the DNA-particle complex, take into account the persistence length of the DNA, is derived from the 〈R 2 DNA 〉 calculated for an isolated DNA molecule:
-								<center>〈R² DNA 〉=2L p( L−L p ( 1−e− L/ L p) )</center>
-								<br>
+								With the classical Worm-Like chain model, the amplitude of motion of the DNA-particle complex, take into account the persistence length of the DNA, is derived from the R<sub>DNA</sub><sup>2</sup>〉calculated for an isolated DNA molecule:
+								<center>〈R<sub>DNA</sub><sup>2</sup>〉= 2LL <sub>p</sub> - 2L <sup>2</sup><sub>p</sub>  </center>
+								</p>
 								<div style="text-align: center;"><IMG SRC="./images/SImu_sphereentiere_2.png" width="650" height="300" ALT="image"></div>
-							
-								
-							</p>
-							
+							<center>Schematic representation of numerical simulation</center>
+							<br>
 							<p>
-								In this second step we considering that the particle and the DNA molecule are statistically independent and in ignoring the effect of the substrate. We can simply infer R_{DNA} with: <center> R_{DNA} = (\frac{3}{2} R²_{||} - R²_{par} ]^{1/2}</center>
+								In this second step we considering that the particle and the DNA molecule are statistically independent and in ignoring the effect of the substrate. We can simply infer R <sub>DNA</sub> with: <center> R <sub>DNA</sub> = (\frac{3}{2} R<sup>2</sup><sub>||</sub> - R <sup>2</sup> <sub>par</sub>]^{1/2}</center>
 							</p>
 							<p>
 							[2] M. Manghi, C. Tardin, J. Baglio, P. Rousseau, L. Salomé, N. Destainville, 2010. Probing DNA
@@ -170,6 +171,23 @@ A theoretical description of the polymer chain, named "kinked Worm-Like Chain" w
 				    <p>
 						<strong>Local defect: formation of dénaturation bubble:</strong> A third study concerning the influence of temperature-induced partial denaturation on the global apparent rigidity parameters of the polymer was conducted.
 Preliminary results are proposed.
+					</p>
+					<p>
+						<ul>
+							<li>
+						[1] Plénat, T., Tardin, C., Rousseau, P., Salomé, L., 2012. High-throughput single-molecule analysis of DNA-protein interactions by tethered particle motion. Nucleic Acids Research. 40 (12): e89.
+						<br>
+						[2] M. Manghi, C. Tardin, J. Baglio, P. Rousseau, L. Salomé, N. Destainville, 2010. Probing DNA conformational changes with high temporal resolution by tethered particle motion, Phys. Biol. 7, 046003.
+						<br>
+						[3] O. Kratky and G. Porod. Röntgenuntersuchung gelöster Fadenmoleküle. Recueil des Travaux Chimiques des Pays-Bas, 1949, 68(12) pp1106–1122, DOI: 10.1002/recl.19490681203
+						<br>
+						[4] Brunet, A., Tardin, C., Salomé, L., Rousseau, P., Destainville, N., Manghi, M., Dependence of DNA persistence length on ionic strength of solutions with monovalent and divalent salts: a joint theory-experiment study, Macromolecules, 2015, 48 (11), pp 3641–3652, DOI : 10.1021/acs.macromol.5b00735
+						<br>
+						[5] Manning G. S., The persistence length of DNA is reached from the persistence length of its null isomer through an internal electrostatic stretching force. Biophysical journal, 2006, 91(10) pp3607–16, DOI: 10.1529/biophysj.106.089029
+						<br>
+						[6] Brunet, A., Chevalier, S., Destainville, N., Manghi, M., Rousseau, P., Salhi, M., Salomé, L., Tardin, C., Probing a label-free local bend in DNA by single molecule tethered particle motion, Nucleic acids research, 2015, 42 (11), pe 72(7) DOI : 10.1093/nar/gkv201
+					</li>
+					</ul>
 					</p>
 						</div>
 						
