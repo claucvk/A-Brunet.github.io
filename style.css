@@ -74,10 +74,8 @@ ul {
 
 #banner {
 	position: relative;
-	padding-left: 30px;
-	padding-right: 30px;
-	height: 200px;
-	width: 1120px;
+	height: 260px;
+	width: 1180px;
 	margin: 0px 0 0 0;
 	background: #fff;
 }
