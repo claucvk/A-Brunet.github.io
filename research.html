@@ -98,7 +98,7 @@
 							<p>
 								<strong>Experiment approach:</strong> TPM is a recent experimental single molecule technique which consists in grafting one end of the DNA molecular (length L<sub>DNA</sub>) on a substrat and a nanometric particule (with raduis R<sub>par</sub>) at the other end. The brownianne motion of the tethered nanoparticle is followed. The amplitude of the motion R<sub>Exp||</sub> of this complex DNA/particle that directly depends on the apparent length of the DNA molecule, so of its conformational changes of DNA molecules.
 								
-								<div style="text-align: center;"><IMG SRC="./images/TPM-on-a-chip.png" width="850" height="250" ALT="image"></div>
+								<div style="text-align: center;"><IMG SRC="./images/Research_Exp_TPM-on-a-chip.png" width="850" height="250" ALT="image"></div>
 									<center>
 										Schematic representation of a TPM Bio-chip experiment
 									</center>
@@ -108,7 +108,7 @@
 							The TPM technique is well adapted to address questions concerning conformational changes of the DNA molecule such as curvatures, or denaturation bubble. Since conformational degrees of freedom are not hampered by any external constraints with TPM methode. Moreover, the IPBS group, which has a recognized expertise in TPM techniques, has developed a biochip that enables the high parallelization of TPM and the analysis enought molecules simultaneously <sup>[1]</sup>. Thanks to the ensuing high-throughput data acquisition, we obtain a large accumulation of individual statistics that permits us to get results with a good accuracy. 
 							In that way, the 2D projection of the bead displacement relative to the anchoring point of the DNA molecule gives access to its root-mean-squared end-to-end distance projected on the grafting surface, noted R<sub>exp||</sub>.
 							
-							<div style="text-align: center;"><IMG SRC="./images/TPM.png" width="850" height="270" ALT="image"></div>
+							<div style="text-align: center;"><IMG SRC="./images/Research_Data-TPM_Img2_2.png" width="850" height="250" ALT="image"></div>
 								<center>
 									1) 2D projection of the nanoparticle displacement
 									2) Root-mean-squared end-to-end distance projected R <sub>exp||</sub>, usually called 									Amplitude of the motion
@@ -123,59 +123,66 @@
 								<strong>Numerical simulation approach:</strong> I performed Kinetic Monte Carlo simulations on the particle-DNA complex to predict the particle to anchor 2D-distance. The current simulation model is based on statistical model of polymer described at the mesoscopic scale <sup>[2]</sup>.
 							</p>
 							<p>
-								To simulate the TPM geometry I model the DNA-particle complex as a chain of N(:25 or 50) connected small spheres of radius a and a larger final particle of radius R (R<sub>par</sub>). Numerical displacement of the labeled particle is obtained by performing a Kinetic Monte Carlo Simulation with the followings constraints: hard-wall condition, freely rotative joint and hard sphere.
+								To simulate the TPM geometry I model the DNA-particle complex as a chain of N(:25 or 50) connected small spheres of radius a and a larger final particle of radius R<sub>par</sub>. Numerical displacement of the labeled particle is obtained by performing a Kinetic Monte Carlo Simulation with the followings constraints: hard-wall condition, freely rotative joint and hard sphere.
 							</p>
-							<p>
-								The 2D-vector of the particle position  is measured throughout simulations and utilized to estimate the amplitude of motion and average being taken along the trajectory. We obtain R<sub>Simu||</sub> which would be compare at the TPM experiment measurement.
-							</p>
-								<strong>Theoretical aspect:</strong> Obtaining most degree of pertinant physical parameter of the DNA requires few step of analysis procedure. The calculation of the root-mean-square end-to-end distance of the DNA molecule R<sub>DNA</sub> from the R<sub>Exp||</sub> or R<sub>Simu||</sub> requires an appropriate theoretical model and correcting for the effects of the particle.
-							</p>
-							<p>
-								With the classical Worm-Like chain model, the amplitude of motion of the DNA-particle complex, take into account the persistence length of the DNA, is derived from the R<sub>DNA</sub><sup>2</sup>〉calculated for an isolated DNA molecule:
-								<center>〈R<sub>DNA</sub><sup>2</sup>〉= 2LL <sub>p</sub> - 2L <sup>2</sup><sub>p</sub>  </center>
-								</p>
-								<div style="text-align: center;"><IMG SRC="./images/SImu_sphereentiere_2.png" width="650" height="300" ALT="image"></div>
+															<div style="text-align: center;"><IMG SRC="./images/Research_Simu_Img3.png" width="650" height="300" ALT="image"></div>
 							<center>Schematic representation of numerical simulation</center>
 							<br>
-							<p>
-								In this second step we considering that the particle and the DNA molecule are statistically independent and in ignoring the effect of the substrate. We can simply infer R <sub>DNA</sub> with: 
-								<center> \[ R^2_{DNA} = \frac{3}{2} \langle R^2 _{||} \rangle - R^2{par} ^{1/2} \]</center>
+														<p>
+								The 2D-vector of the particle position  is measured throughout simulations and utilized to estimate the amplitude of motion and average being taken along the trajectory. We obtain R<sub>Simu||</sub> which would be compare at the TPM experiment measurement.
 							</p>
 							<p>
 							[2] M. Manghi, C. Tardin, J. Baglio, P. Rousseau, L. Salomé, N. Destainville, 2010. Probing DNA
 							conformational changes with high temporal resolution by tethered particle motion, Phys. Biol. 7, 046003.	
 							</p>
-								
+								<strong>Theoretical aspect:</strong> Obtaining most degree of pertinant physical parameter of the DNA requires few step of analysis procedure. The calculation of the root-mean-square end-to-end distance of the DNA molecule R<sub>DNA</sub> from the R<sub>Exp||</sub> or R<sub>Simu||</sub> requires an appropriate theoretical model and correcting for the effects of the particle.
+							</p>
+							<p>
+								With the classical Worm-Like chain model<sup>[3]</sup>, the amplitude of motion of the DNA-particle complex, take into account the persistence length of the DNA, is derived from the 〈R<sub>DNA</sub><sup>2</sup>〉calculated for an isolated DNA molecule:
+								<center>〈R<sub>DNA</sub><sup>2</sup>〉= 2LL <sub>p</sub> - 2L <sup>2</sup><sub>p</sub>  </center>
+								</p>
+								<p>
+								In this second step we considering that the particle and the DNA molecule are statistically independent and in ignoring the effect of the substrate. We can simply infer R <sub>DNA</sub> with: 
+<center> \[ R^2_{DNA} = \frac{3}{2} \langle R^2 _{||} \rangle - R^2{par} ^{1/2} \]</center>
+
+							</p>	
+							<p> [3] O. Kratky and G. Porod. Röntgenuntersuchung gelöster Fadenmoleküle. Recueil des Travaux Chimiques des Pays-Bas, 1949, 68(12) pp1106–1122, DOI: 10.1002/recl.19490681203</p>						
 						</div>
 						<div id="box3">
 							<h3>Results</h3>
 							<p>
-								<strong> Global effect: Variation of Ionic strenght:</strong> A first study was conducted on the effect of the ionic strength induced by surrounding ions in solution on the DNA persistence length (L p ) which characterizes the DNA polymer rigidity. The extracted L p values of HT-TPM measurement decrease from 55 to 30 nm when the ionic strength increases. A stronger decrease was observed in presence of divalent ions Mg 2 + than with monovalent ions Na + .
+								<strong> Global effect: </strong> </p>
+								<p> <strong> Variation of Ionic strenght <sup>[4]</sup>:</strong> A first study was conducted on the effect of the ionic strength induced by surrounding ions in solution on the DNA persistence length (L<sub>p</sub> ) which characterizes the DNA polymer rigidity. The extracted L<sub>p</sub> values of HT-TPM measurement decrease from 55 to 30 nm when the ionic strength increases. A stronger decrease was observed in presence of divalent ions Mg<sup>2+</sup> than with monovalent ions Na<sup>+</sup>.
 					</p>
 					<p>
-This quantification of L p dependence, on a large and strongly prospected range
+This quantification of L<sub>p</sub> dependence, on a large and strongly prospected range
 of ionic strengthes, tends to validate the theoretical approach proposed in 2006 by
-Manning in presence of monovalent ions Na + .
-<div style="text-align: center;"><IMG SRC="./images/logosel.png" width="460" height="500" ALT="image"></div>
+Manning<sup>[5]</sup> in presence of monovalent ions Na<sup>+</sup>.
+<div style="text-align: center;"><IMG SRC="./images/Research_Logosel_Img4.png" width="460" height="500" ALT="image"></div>
 
 					</p>
 					<p>
 						<p>
-[3]  Brunet, A., Tardin, C., Salomé, L., Rousseau, P., Destainville, N., Manghi, M., Dependence of DNA persistence length on ionic strength of solutions with monovalent and divalent salts : a joint theory-experiment study, Macromolecules, 2015, 48 (11), pp 3641–3652, DOI : 10.1021/acs.macromol.5b00735.	
+[4]  Brunet, A., Tardin, C., Salomé, L., Rousseau, P., Destainville, N., Manghi, M., Dependence of DNA persistence length on ionic strength of solutions with monovalent and divalent salts : a joint theory-experiment study, Macromolecules, 2015, 48 (11), pp 3641–3652, DOI : 10.1021/acs.macromol.5b00735.	
+</p><p>[5] Manning G. S., The persistence length of DNA is reached from the persistence length of its null isomer through an internal electrostatic stretching force. Biophysical journal, 2006, 91(10) pp3607–16, DOI:  10.1529/biophysj.106.089029
 						</p>
-						<strong>Local defect: Intrisic bent:</strong> A second project allows us to develop a method of evaluation and quantification of local DNA bending angles, induced either by specific intrinsic sequence, or by the binding of proteins on DNA. Constructs made of 575 base-pair DNAs with in-phase assemblies of one to seven sequences CAAAAAACGG was used.
-A theoretical description of the polymer chain, named "kinked Worm-Like Chain" was proposed which leads to a simple formulation of the end-to-end distance of DNA molecules allowing to extract local bend angles from HT-TPM measurement. As a result, we find that the sequence CAAAAAACGG induces a bend angle of 19 ◦ ± 4 ◦ , in agreement with other value from the literature.
+						<strong>Local defect:</strong>
+						</p>
+						<p> <strong> Intrisic bent <sup>[6]</sup>:</strong> A second project allows us to develop a method of evaluation and quantification of local DNA bending angles, induced either by specific intrinsic sequence, or by the binding of proteins on DNA. Constructs made of 575 base-pair DNAs with in-phase assemblies of one to seven sequences CAAAAAACGG was used.
+A theoretical description of the polymer chain, named "kinked Worm-Like Chain" was proposed which leads to a simple formulation of the end-to-end distance of DNA molecules allowing to extract local bend angles from HT-TPM measurement. As a result, we find that the sequence CAAAAAACGG induces a bend angle of 19<sup>◦</sup> ± 4<sup>◦</sup>, in agreement with other value from the literature.
+					<div style="text-align: center;"><IMG SRC="./images/Research_Logobent_Img5.png" width="460" height="500" ALT="image"></div>
 					</p>
 					<p>
-					[4] Brunet, A., Chevalier, S., Destainville, N., Manghi, M., Rousseau, P., Salhi,
+					[6] Brunet, A., Chevalier, S., Destainville, N., Manghi, M., Rousseau, P., Salhi,
 					M., Salomé, L., Tardin, C., Probing a label-free local bend in DNA by single
 					molecule tethered particle motion, Nucleic acids research, 2015, 42 (11), pe 72(7)
 					DOI : 10.1093/nar/gkv201
 				   </p>
 				    <p>
-						<strong>Local defect: formation of dénaturation bubble:</strong> A third study concerning the influence of temperature-induced partial denaturation on the global apparent rigidity parameters of the polymer was conducted.
+						<strong>Local defect: formation of denaturation bubble:</strong> A third study concerning the influence of temperature-induced partial denaturation on the global apparent rigidity parameters of the polymer was conducted.
 Preliminary results are proposed.
 					</p>
+					<p></p>
 					<p>
 						<ul>
 							<li>
@@ -213,13 +220,13 @@ Preliminary results are proposed.
 											</li>
 											<li>
 												<p>Coming Events</p>
-												<a href="http://www.adum.fr/script/detailSout.pl?mat=48461&moisAffich=enCours&site_temp=&menu_transparent=oui&site=edsdm">18th October 2015 thesis defense</a>
+												<a href="http://www.adum.fr/script/detailSout.pl?mat=48461&moisAffich=enCours&site_temp=&menu_transparent=oui&site=edsdm">16th October 2015 thesis defense</a>
 											</li>
 										</ul>
 									</div>
 									<div id="footerContent">
 										<h3>
-											About
+											About my research
 										</h3>
 										<p>
 											I am performing both experimental and theoretical study at the single molecule level of conformational changes of the DNA molecule. I am investigate the impact of local defects included in the DNA molecule and of physicochemical conditions set by the surrounding mobiles ions presente in the solvent.
